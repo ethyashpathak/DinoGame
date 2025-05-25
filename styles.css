@@ -1,0 +1,92 @@
+/* Reset default browser styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(to bottom, #c2f0f7, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background: linear-gradient(to top, #7fe57f, #c4f7c4);
+  border: 5px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#dino {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+}
+
+#cactus {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4081;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #f50057;
+}
+#status {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #222;
+  background: linear-gradient(to right, #ffeb3b, #ff9800);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.2s infinite;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional: pulsing animation for dynamic effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+}
